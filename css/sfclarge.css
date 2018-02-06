@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+body{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 14px;
+	line-height: 1.25;
+	margin: 0 auto;
+	width: 100%;
+	background: #0b669e; /* No Support on Browers */
+	background: -webkit-linear-gradient(left top, #0b669e, #064874 ); /* Safari */
+    background: -o-linear-gradient(bottom right, #0b669e, #064874 ); /* Opera */
+    background: -moz-linear-gradient(bottom right, #0b669e,#064874); /* Firefox */
+    background: linear-gradient(to bottom right, #0b669e, #064874); /* Standard syntax */
+	overflow-x: hidden;
+}
+
+
+.containerheader{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.secondcontainer{
+	width: 960px;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+header{
+	position: fixed;
+	left: 0;
+	right: 0;
+	background: rgba(255,255,255,.80);
+	animation: headerfade;
+	animation-duration: 1s;
+	width: 960px;
+	height: 110px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+header h1{
+	position: absolute;
+	top: -33px;
+	left: 20px;
+	float: left;
+}
+
+header:hover{
+	animation: headertosolid;
+	animation-duration: 1s;
+	background:rgba(255,255,255,1.00);
+}
+
+@keyframes headertosolid {
+	from{background:rgba(255,255,255,.80) }
+	to {background:rgba(255,255,255,1.00);}
+}
+
+@keyframes headerfade {
+	from{background:rgba(255,255,255,1.00) }
+	to {background:rgba(255,255,255,.80);}
+}
+
+header a{
+	color:#07198A;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+header a:hover{
+	color:white;
+}
+
+header ul{
+	margin-top: 20px;
+}
+
+header li{
+	float: left;
+	display:inline;
+	padding: 0 10px 0 10px;
+}
+
+header nav{
+	float: right;
+	margin-top:5px;
+}
+
+header information{
+	animation: informationAnimation;
+	animation-duration: 2s;
+}
+
+#check{
+	background: url(check.png) no-repeat; 
+	background-size: 100%;
+	width: 100%;
+	height: 0;
+	background-position: 0 10%;
+	padding-top: 50%; 
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin-bottom: 5px;
+}
+
+figcaption {
+	position: relative;
+	color: #0B145B;
+	text-align: justify;
+	background-color: #FFFFFF;
+	width: 370px;
+	height: 20px;
+	top: -15px;
+	padding-top: 20px;
+	padding-left: 10px;
+	z-index: -1;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#rightmargin{
+	position: absolute;
+	padding-left: 20px;
+	padding-top: 20px;
+	z-index: -1;
+	
+}
+
+#info{
+}
+
+#info h2{
+	text-align: center;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 50px;
+	color:#DDE8F1;
+	margin: 40px auto 20px;
+}
+
+#info p{
+	color:#DDE8F1;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	text-align: justify;
+	margin: 0 auto;
+}
+
+article {
+	width: 60%;
+	float: right;
+	color:#DDE8F1;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	text-align: justify;
+	margin-top: 2%;
+}
+
+#donation {
+	background:url(dontationlevels.png) no-repeat center;
+	background-size: 100%;
+	float: left;
+	width: 37%;
+	padding-top: 30%;
+	margin: auto auto;
+
+}
+
+footer{
+	float: left;
+	position: relative;
+	text-align: center;
+	background-color:#FFFFFF;
+	padding: 2px;
+	margin-top: 50px;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	color:#0B145B;
+}
+
+#informationbutton{
+} 
+
+#informationlink{
+	position: relative;
+	top: -120px;
+	width: 100%;
+	margin: auto auto;
+	z-index: 50;
+}
