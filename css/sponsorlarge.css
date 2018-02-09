@@ -106,6 +106,10 @@ header information{
 	color:#DDE8F1
 }
 
+#info sponsorsdiv {
+	float: center;
+}
+
 footer{
 	float: left;
 	position: relative;
@@ -116,3 +120,5 @@ footer{
 	border-top-right-radius: 20px;
 	color:#0B145B;
 }
+
+
