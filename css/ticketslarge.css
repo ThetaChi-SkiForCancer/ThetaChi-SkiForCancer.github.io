@@ -105,6 +105,10 @@ header information{
 	color:#DDE8F1
 }
 
+#info ticketportalbutton{
+	margin: auto;
+}
+
 footer{
 	float: left;
 	position: relative;
