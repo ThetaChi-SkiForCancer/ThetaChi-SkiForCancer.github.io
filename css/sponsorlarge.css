@@ -107,6 +107,7 @@ header information{
 }
 
 .sponsorsdiv {
+	display: block;
 	margin: auto;
 }
 
